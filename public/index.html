@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>in</h1>
+    <div class="pushTemplate"></div>
+    <template class="login">
+      <div class="flex">
+        <input type="text" id="user-name" />
+        <input type="password" id="password" />
+        <button onclick="get()">get in</button>
+        <p onclick="signup()" class="changFrame">sign up</p>
+      </div>
+    </template>
+    <template class="signup">
+      <div class="flex">
+        <input type="text" id="user-name" />
+        <input type="password" id="password" />
+        <input type="password" id="password2" />
+        <small></small>
+        <button onclick="post()">get in</button>
+        <p onclick="login()" class="changFrame">log in</p>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>

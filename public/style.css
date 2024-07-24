@@ -1,0 +1,67 @@
+
+body{
+    text-align: center;
+    background-color: whitesmoke;
+}
+h2 {
+    border-bottom: 1px solid black;
+}
+.showsFiles{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    border: 2px solid blue;
+
+}
+.file{
+    padding: 10px;
+    min-width: 100px;
+    min-height: 150px;
+    border-radius: 30px;
+    background-image: url("https://assets.dryicons.com/uploads/icon/svg/5878/837f8a48-175a-4656-b802-2596aa69ec22.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.folder{
+    padding: 10px;
+    min-width: 100px;
+    min-height: 150px;
+    border-radius: 30px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3767/3767084.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#user-name {
+    background-color: bisque;
+}
+#name{
+    color: green;
+    background-color: bisque;
+    border-radius: 100%;
+}
+.copyInp{
+    width: 80%;
+    background-color: yellow;
+}
+#setText{
+    color: white;
+    max-width:fit-content;
+    max-height: fit-content;
+    background-color:gray ;
+}
+#password2err{
+    border: 1px solid red;
+}
+.changFrame:hover{
+    cursor: pointer;
+    color: red;
+}
+#num {
+     color: blue;
+    text-align: left;
+    padding-left: 30px;
+}
+button {
+    cursor: pointer;
+}

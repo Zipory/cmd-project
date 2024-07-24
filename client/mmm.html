@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>all your files:</h1>
+    <button onclick="goBack()">go back</button>
+
+    <h2></h2>
+
+    <button onclick="makeNew()" id="MNF">make new folder</button><br />
+    <div class="showsFiles"></div>
+
+    <template id="fileTemplate">
+      <div class="allDiv">
+        <legend class="name">file</legend>
+        <button class="dell" onclick="dell(this.id)">delete</button>
+        <div class="file">
+          <p id="num"></p>
+          <button onclick="open1(this.id)" class="openFile">open</button>
+          <p id="name"></p>
+          <p>
+            <input
+              type="text"
+              placeholder="where to copy that"
+              class="copyInp"
+            /><button onclick="toCopy(this)" class="copy">copy</button>
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <template id="folderTemplate">
+      <div class="allDiv">
+        <legend class="name">folder</legend>
+        <button class="dell" onclick="dell(this.id)">delete (if empty)</button>
+        <div class="folder">
+          <p id="num"></p>
+          <button onclick="open1(this.id)" class="openFile">open</button>
+          <p id="name"></p>
+          <p>
+            <input
+              type="text"
+              placeholder="where to copy that"
+              class="copyInp"
+            /><button onclick="toCopy(this)" class="copy">copy</button>
+          </p> 
+          <!-- <label for="file">or choose file:</label>
+          <p><input type="file" name="file" id="file"></p>
+        </div>
+      </div>
+    </template>
+    <script src="scriptShow.js"></script>
+  </body>
+</html>
